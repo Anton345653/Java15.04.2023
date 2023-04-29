@@ -1,4 +1,4 @@
-package Lesson1.DZ1;
+package lesson1.dz1;
 
 public class Task7 {
     public static void main(String[] args) {

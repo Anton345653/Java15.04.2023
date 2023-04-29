@@ -1,4 +1,4 @@
-package Lesson1.DZ2;
+package lesson1.dz2;
 
 import java.util.Arrays;
 
