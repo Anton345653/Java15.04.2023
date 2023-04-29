@@ -3,6 +3,7 @@ package lesson2.dz4;
 public class Animal {
     void run (int distance) {
         System.out.println("Животное бежит");
+        System.out.println();
     }
 
     void jump (int height) {
@@ -16,4 +17,6 @@ public class Animal {
     public int limit() {
         return (int) ((Math.random() * 401));
     }
+
+
 }
