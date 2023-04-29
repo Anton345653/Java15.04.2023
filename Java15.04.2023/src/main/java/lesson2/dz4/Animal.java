@@ -1,15 +1,15 @@
 package lesson2.dz4;
 
 public class Animal {
-    void run (int distance) {
+    void run(int distance) {
         System.out.println("Животное бежит");
     }
 
-    void jump (int height) {
+    void jump(int height) {
         System.out.println("Животное прыгает");
     }
 
-    void swim () {
+    void swim() {
         System.out.println("Животное плывет");
     }
 
