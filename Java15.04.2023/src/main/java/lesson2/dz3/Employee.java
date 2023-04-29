@@ -24,6 +24,7 @@ public class Employee {
         System.out.println("Телефон: " + numberPhone);
         System.out.println("Зарплата: " + salary);
         System.out.println("Возраст: " + age);
+        System.out.println();
 
     }
 }
