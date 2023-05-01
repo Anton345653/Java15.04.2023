@@ -2,7 +2,7 @@ package lesson1.dz2;
 
 public class Task6 {
     public static void main(String[] args) {
-        int[] a = {1, 1, 1, 2, 1};
+        int[] a = {1, 2, 1, 2, 1}; // почему при такой комбинации false?
         System.out.println(fuu(a));
     }
 

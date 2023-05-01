@@ -7,6 +7,7 @@ public class Task4 {
 
     public static boolean fuu(int a, int b) {
         int h = a + b;
+        // можно написать проще: return h >= 10 && h <= 20;
         if (h >= 10 && h <= 20)
             return true;
         else

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Task1 {
     public static void main(String[] args) {
-        int[] A = {1, 2, 3};
+        int[] A = {1, 2, 3}; // не называй переменный с большой буквы, название всегда в camelCase
         int[] B = new int[3];
         System.out.println(Arrays.toString(A));
         System.out.println(Arrays.toString(B));
