@@ -5,7 +5,7 @@ public class Task8 {
         leapYear(400);
     }
 
-    public static void leapYear(int a) {
+    public static void leapYear(int a) { // я бы назвал isLeapYear или checkLeapYear
         if (a % 400 == 0) {
             System.out.println(a + " год является високосным");
         } else if (a % 4 == 0 && a % 100 != 0) {
