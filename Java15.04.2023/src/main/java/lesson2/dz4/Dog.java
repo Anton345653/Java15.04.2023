@@ -11,7 +11,7 @@ public class Dog extends Animal {
 
     @Override
     void jump(int height) {
-        if (height > 0.5) {
+        if (height > 1) {
             System.out.println("false");
         } else {
             System.out.println("true");

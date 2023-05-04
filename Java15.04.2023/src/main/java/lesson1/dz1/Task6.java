@@ -6,8 +6,6 @@ public class Task6 {
     }
 
     public static boolean fuu(int a) {
-        if (a < 0)
-            return true;
-        return false;
+        return a < 0;
     }
 }

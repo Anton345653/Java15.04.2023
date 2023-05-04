@@ -4,16 +4,15 @@ import java.util.Arrays;
 
 public class Task4 {
     public static void main(String[] args) {
-        int[][] a=new int[6][6];
-        for(int i=0;i<a.length;i++){
-            for (int j=0;j<a[i].length;j++){
-                if(i==j || i==a.length-1){
-                    a[i][j]=1;
-                }
+        int[][] arr = new int[7][7];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0, x = arr[i].length - 1; j < arr[i].length; j++, x--) {
+                if (i == j || i == x) arr[i][j] = 1;
+                else arr[i][j] = 0;
+                System.out.print(arr[i][j] + " ");
             }
-        }
-        for (int[] o: a) {
-            System.out.println(Arrays.toString(o));
+            System.out.print("\n");
         }
     }
 }
+
