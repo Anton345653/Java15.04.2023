@@ -23,6 +23,7 @@ public class Dog extends Animal {
             System.out.println("false");
         } else {
             System.out.println("true");
+
         }
     }
 }
