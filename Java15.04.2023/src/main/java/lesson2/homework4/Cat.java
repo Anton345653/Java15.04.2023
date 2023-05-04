@@ -1,8 +1,8 @@
-package lesson2.dz4;
+package lesson2.homework4;
 
 public class Cat extends Animal {
     @Override
-    void run (int distance) {
+    void run(int distance) {
         if (distance > limit()) {
             System.out.println("false");
         } else {
@@ -11,7 +11,7 @@ public class Cat extends Animal {
     }
 
     @Override
-    void jump (int height) {
+    void jump(int height) {
         if (height > 2) {
             System.out.println("false");
         } else {
@@ -20,7 +20,7 @@ public class Cat extends Animal {
     }
 
     @Override
-    void swim () {
+    void swim() {
         System.out.println("Кошка не умеет плавать!");
     }
 }

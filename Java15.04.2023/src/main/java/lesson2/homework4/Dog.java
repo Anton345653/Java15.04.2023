@@ -1,7 +1,7 @@
-package lesson2.dz4;
+package lesson2.homework4;
 
-public class Dog extends Animal{
-    void run (int distance) {
+public class Dog extends Animal {
+    void run(int distance) {
         if (distance > limit()) {
             System.out.println("false");
         } else {
@@ -10,18 +10,20 @@ public class Dog extends Animal{
     }
 
     @Override
-    void jump (int height) {
-        if (height > 0.5) {
+    void jump(int height) {
+        if (height > 1) {
             System.out.println("false");
         } else {
             System.out.println("true");
         }
     }
 
-    void swim (int distance) {
+    void swim(int distance) {
         if (distance > 10 || distance < 0) {
             System.out.println("false");
         } else {
             System.out.println("true");
+
         }
-    }}
+    }
+}

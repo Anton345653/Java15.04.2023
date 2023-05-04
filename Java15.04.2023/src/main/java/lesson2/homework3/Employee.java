@@ -1,4 +1,4 @@
-package lesson2.dz3;
+package lesson2.homework3;
 
 public class Employee {
     String name;
@@ -17,14 +17,13 @@ public class Employee {
         this.age = age;
     }
 
-    public void information(){
+    public void information() {
         System.out.println("Имя: " + name);
         System.out.println("Должность: " + position);
         System.out.println("Эл. почта: " + email);
         System.out.println("Телефон: " + numberPhone);
         System.out.println("Зарплата: " + salary);
         System.out.println("Возраст: " + age);
-
     }
 }
 
