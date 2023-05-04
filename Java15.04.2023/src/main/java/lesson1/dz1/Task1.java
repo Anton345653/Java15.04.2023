@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class Task1 {
     public static void main(String[] args) {
-        int[] A = {1, 2, 3};
-        int[] B = new int[3];
-        System.out.println(Arrays.toString(A));
-        System.out.println(Arrays.toString(B));
-        System.arraycopy(A, 0, B, 0, A.length);
-        System.out.println(Arrays.toString(A));
-        System.out.println(Arrays.toString(B));
+        int[] a = {1, 2, 3};
+        int[] b = new int[3];
+        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(b));
+        System.arraycopy(a, 0, b, 0, a.length);
+        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(b));
 
         String color = "green";
         switch (color) {
@@ -26,8 +26,8 @@ public class Task1 {
             default:
                 System.out.println("something wrong");
         }
-        byte a = 2;
-        short b = 3;
+        byte p = 2;
+        short y = 3;
         int c = 1;
         long i = 1234556;
         float e = 1.3f;

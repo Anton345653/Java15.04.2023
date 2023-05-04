@@ -6,8 +6,7 @@ public class Task3 {
     }
 
     public static int result(int a, int b, int c, int d) {
-        int h = a * (b + (c / d));
-        return h;
+        return a * (b + (c / d));
     }
 }
 
