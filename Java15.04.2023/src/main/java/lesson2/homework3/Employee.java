@@ -1,4 +1,4 @@
-package lesson2.dz3;
+package lesson2.homework3;
 
 public class Employee {
     String name;

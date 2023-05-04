@@ -1,4 +1,4 @@
-package lesson2.dz4;
+package lesson2.homework4;
 
 public class Animal {
     void run(int distance) {
