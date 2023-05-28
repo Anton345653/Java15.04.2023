@@ -8,6 +8,6 @@ public class Task6 {
         StringBuilder stringBuilder = new StringBuilder();
         Formatter formatter = new Formatter(stringBuilder);
         formatter.format("$%.3f", w);
-        System.out.println(stringBuilder.toString());
+        System.out.println(stringBuilder);
     }
 }

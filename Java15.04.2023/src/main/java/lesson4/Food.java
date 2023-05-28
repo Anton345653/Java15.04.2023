@@ -7,12 +7,11 @@ public class Food {
 
     public static void main(String[] args) {
         Food food = new Food();
-        Cookable cookable = new Cookable() {
+        food.prepare(new Cookable() {
             @Override
             void cook(String str) {
                 System.out.println("готовь " + str);
             }
-        };
-        food.prepare(cookable, "печеньки");
+        }, "печеньки");
     }
 }
