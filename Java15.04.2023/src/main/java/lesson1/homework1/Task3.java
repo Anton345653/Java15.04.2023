@@ -1,0 +1,12 @@
+package lesson1.homework1;
+
+public class Task3 {
+    public static void main(String[] args) {
+        System.out.println(result(1, 2, 3, 4));
+    }
+
+    public static int result(int a, int b, int c, int d) {
+        return a * (b + (c / d));
+    }
+}
+
