@@ -1,35 +1,42 @@
 package lesson7.task3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Box<T extends Fruit> {
-    private ArrayList<T> fruits;
+public class Box {
+    private List<Fruit> fruits = new ArrayList<>();
 
-    public Box() {
-        this.fruits = new ArrayList<T>();
-    }
-
-    public Box(T... f) {
-        this.fruits = (ArrayList<T>) Arrays.asList(f);
-    }
-
-    public void add(T fruit) {
-        this.fruits.add(fruit);
+    public void add(Fruit fruit) {
+        if (fruits.size() == 0) {
+            fruits.add(fruit);
+        } else {
+            if (fruits.get(0) instanceof Apple && fruit instanceof Apple) {
+                fruits.add(fruit);
+            } else if (fruits.get(0) instanceof Orange && fruit instanceof Orange) {
+                fruits.add(fruit);
+            } else {
+                throw new RuntimeException("Box consists of " + fruits.get(0).getClass().getSimpleName() + ". Try to add" + fruit.getClass().getSimpleName());
+            }
+        }
     }
 
     public float getWeight() {
-        return fruits.get(0).getWeight() * fruits.size();
+        float count = 0;
+        for (Fruit f : fruits) {
+            count += f.getWeight();
+        }
+        return count;
     }
 
-    public boolean compare(Box<? extends Fruit> box) {
-        return this.getWeight() == box.getWeight();
+    public void putInOtherBox(Box other) {
+        for (Fruit f : fruits) {
+            other.add(f);
+        }
+        List<Fruit> empty = new ArrayList<>();
+        fruits = empty;
     }
 
-    public void move(Box<T> box) {
-        this.fruits.addAll(box.fruits);
-        box.fruits.clear();
+    public boolean compare(Box box) {
+        return getWeight() == box.getWeight();
     }
-
 }

@@ -8,13 +8,13 @@ public class StreamDemo {
     private static final int FILE_SIZE = 1024 * 1024 * 100;
 
     public static void generateFile() {
-        try (RandomAccessFile f = new RandomAccessFile("F:\\copy\\t.txt", "rw")) {
-            f.setLength(1024 * 1024 * 100);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        //  try (RandomAccessFile f = new RandomAccessFile("F:\\copy\\t.txt", "rw")) {
+        //      f.setLength(1024 * 1024 * 100);
+        //  } catch (FileNotFoundException e) {
+        //      throw new RuntimeException(e);
+        //  } catch (IOException e) {
+        //      throw new RuntimeException(e);
+        //  }
         Random r = new Random();
         int w = 0;
         try (FileWriter fileWriter = new FileWriter("F:\\copy\\t.txt")) {
@@ -40,8 +40,6 @@ public class StreamDemo {
             while ((k = fileReader.read(buffer)) != -1) {
                 fileWriter.write(buffer, 0, k);
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

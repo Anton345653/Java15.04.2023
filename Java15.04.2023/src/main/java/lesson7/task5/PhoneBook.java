@@ -30,10 +30,9 @@ public class PhoneBook {
         } else if (name != null && name.trim().length() != 0) {
             for (Contact contact : this.contactList) {
                 if (contact.getName().equalsIgnoreCase(name)) {
-                    System.out.println("Имя: " + contact.getName() + "\n" + "Телефон: " + contact.getNumber());
+                    System.out.println(contact);
                     System.out.println("\n");
                 }
-
             }
         }
     }

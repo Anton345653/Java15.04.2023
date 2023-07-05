@@ -2,16 +2,18 @@ package lesson6.exception;
 
 public class Array {
     public static void main(String[] args) {
-        foldArray(array);
-
+        String[][] array = {
+                {"6", "8", "8", "5"},
+                {"45", "3", "2", "1"},
+                {"56", "66", "87", "5"},
+                {"4", "5", "4", "67"}
+        };
+        try {
+            foldArray(array);
+        } catch (MyArrayDataException | MyArraySizeException a) {
+            a.printStackTrace();
+        }
     }
-
-    static String[][] array = {
-            {"6", "8", "8", "5"},
-            {"45", "3", "2", "1"},
-            {"56", "66", "87", "5"},
-            {"4", "5", "4", "67"}
-    };
 
     public static void foldArray(String[][] a) {
         int sum = 0;
@@ -23,7 +25,7 @@ public class Array {
                 try {
                     Integer.parseInt(a[i][j]);
                 } catch (NumberFormatException e) {
-                    throw new MyArrayDataException("ошибка " + i + " " + j);
+                    throw new MyArrayDataException("Неверный формат числа в ячейке " + i + " " + j);
                 }
                 sum += Integer.parseInt(a[i][j]);
             }

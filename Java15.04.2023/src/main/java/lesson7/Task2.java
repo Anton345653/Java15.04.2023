@@ -1,6 +1,5 @@
 package lesson7;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,7 +12,8 @@ public class Task2 {
     }
 
     public static <T> List<T> transformToArrayList(T[] a) {
-        List<T> list = Arrays.asList(a);
-        return list;
+        return Arrays.asList(a);
+        // List<T> list = Arrays.asList(a);
+        // return list;
     }
 }
